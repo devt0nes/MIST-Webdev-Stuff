@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+* {
+    background-image: url("images/creepgridpink.png");
+    background-attachment: fixed;
+    background-color: transparent;
+}
+
+h1 {
+    color: hotpink;
+    font: bold 35px "Goudy Bookletter 1911", serif;
+    border-bottom: 10px dotted purple;
+    text-decoration: blink;
+}
+
+h1,h2,body h2+pre {
+    text-align: center;
+}
+
+canvas+pre {
+    background-image: url("images/note1.png");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: auto 250px;
+    margin: 1em;
+}
+
+/*#Grammar {
+    padding: 10px;  /* (try using the calc() function!)
+    margin: 0.5em 0;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    color: rebeccapurple;
+    background-color: black;
+    font-weight: bold;
+}*/
+
+a:link {
+    color:pink;
+}
+
+a:visited {
+    color:lime;
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 0);
+}
+
+ul {
+    background-color: #eeeeee;
+    border: 5px solid purple;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+table tr {
+    text-decoration: wavy underline #FF0000;
+}
+
+#Grammar dt {
+    text-shadow: goldenrod 2px 2px;
+}
+
+/*figure {
+    transform: rotate(0.8turn);
+}*/
