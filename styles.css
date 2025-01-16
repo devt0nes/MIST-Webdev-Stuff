@@ -1,10 +1,30 @@
 @charset "utf-8";
 
-* {
+@font-face {
+    font-family: "Monofett";
+    src: local("Monofett"), url("fonts/Monofett/Monofett-Regular.ttf") format("opentype");
+}
+
+@font-face {
+    font-family: "Goudy Bookletter 1911";
+    src: local("Goudy Bookletter 1911"), url("fonts/Goudy_Bookletter_1911/GoudyBookletter1911-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Pixelify Sans";
+    src: local("Pixelify Sans"), url("fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf");
+}
+
+html {
     background-image: url("images/creepgridpink.png");
     background-attachment: fixed;
     background-color: transparent;
+    cursor: url("icons/handcursor.cur"),auto;
 }
+
+/*audio:hover {
+    cursor: url("icons/handhover.png"),auto;
+}*/
 
 h1 {
     color: hotpink;
@@ -13,8 +33,17 @@ h1 {
     text-decoration: blink;
 }
 
+nav {
+    font-family: "Pixelify Sans";
+    font-size: 1.2em;
+}
+
 h1,h2,body h2+pre {
     text-align: center;
+}
+
+#memes img {
+    display: block;
 }
 
 canvas+pre {
@@ -37,31 +66,36 @@ canvas+pre {
 }*/
 
 a:link {
-    color:pink;
+    color:blue;
 }
 
 a:visited {
-    color:lime;
+    color:blueviolet;
 }
 
 a:hover {
     text-decoration: none;
-    color: rgb(255, 255, 0);
+    color: rgb(255, 0, 119);
 }
 
 ul {
-    background-color: #eeeeee;
+    background-color: #e3fefd;
     border: 5px solid purple;
     padding: 5px;
     border-radius: 8px;
 }
 
-table tr {
-    text-decoration: wavy underline #FF0000;
+#Movies tr td:first-child {
+    font-family: "Monofett", serif;
+    font-size: 24px;
 }
 
 #Grammar dt {
     text-shadow: goldenrod 2px 2px;
+}
+
+footer p {
+    background: linear-gradient(90deg, rgb(131 58 180 / 50%) 0%, rgb(253 29 29 / 30%) 60%, rgb(252 176 69 / 60%) 100%);
 }
 
 /*figure {
