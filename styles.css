@@ -34,8 +34,13 @@ h1 {
 }
 
 nav {
-    font-family: "Pixelify Sans";
+    font-family: "Pixelify Sans", monospace, sans-serif;
     font-size: 1.2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: 0.2px solid purple;
+    border-radius: 8px;
+    padding: 0;
+    background-color: #e3fefd;
 }
 
 h1,h2,body h2+pre {
@@ -78,15 +83,15 @@ a:hover {
     color: rgb(255, 0, 119);
 }
 
-ul {
+/*ul {
     background-color: #e3fefd;
     border: 5px solid purple;
     padding: 5px;
     border-radius: 8px;
-}
+}*/
 
 #Movies tr td:first-child {
-    font-family: "Monofett", serif;
+    font-family: "Monofett", monospace, serif;
     font-size: 24px;
 }
 
@@ -96,6 +101,24 @@ ul {
 
 footer p {
     background: linear-gradient(90deg, rgb(131 58 180 / 50%) 0%, rgb(253 29 29 / 30%) 60%, rgb(252 176 69 / 60%) 100%);
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background-color: #333;
+}
+
+  table, th, td {
+    border: 1px solid;
+}
+
+#Memes ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 /*figure {
