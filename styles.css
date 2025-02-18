@@ -1,57 +1,191 @@
 @charset "utf-8";
 
-@font-face {
+@font-face
+{
     font-family: "Monofett";
     src: local("Monofett"), url("fonts/Monofett/Monofett-Regular.ttf") format("opentype");
 }
-
-@font-face {
+@font-face
+{
     font-family: "Goudy Bookletter 1911";
     src: local("Goudy Bookletter 1911"), url("fonts/Goudy_Bookletter_1911/GoudyBookletter1911-Regular.ttf");
 }
-
-@font-face {
+@font-face
+{
     font-family: "Pixelify Sans";
     src: local("Pixelify Sans"), url("fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf");
 }
-
-html {
-    background-image: url("images/creepgridpink.png");
-    background-attachment: fixed;
-    background-color: transparent;
-    cursor: url("icons/handcursor.cur"),auto;
+@font-face
+{
+    font-family: "Centaur Regular";
+    src: url("fonts/Centaur_Regular/CENTAUR.TTF");
+}
+@font-face {
+    font-family: "Lucida Calligraphy";
+    src: url("fonts/Lucida_Calligraphy/LCALLIG.TTF");
+}
+@font-face {
+    font-family: "Monotype Corsiva";
+    src: url("fonts/Monotype_Corsiva/MTCORSVA.TTF");
 }
 
-/*audio:hover {
+
+*
+{
+    scroll-behavior: smooth;
+}
+
+html
+{
+    /*padding: 20px 20px 20px 20px;*/
+    background-image: url("images/creepgridpink.png");
+    background-color: black;
+    cursor: url("icons/handcursor.cur"),auto; /*Source: https://www.cursor.cc/?action=icon&file_id=36795*/
+}
+
+/*audio:hover
+{
     cursor: url("icons/handhover.png"),auto;
 }*/
 
-h1 {
-    color: hotpink;
-    font: bold 35px "Goudy Bookletter 1911", serif;
-    border-bottom: 10px dotted purple;
-    text-decoration: blink;
+#pagetop
+{
+    background-image: url("images/pixelclouds.png");
+    background-repeat: repeat;
+    background-size: 700px;
+    padding-top: 15px;
 }
 
-nav {
+h1
+{
+    color: hotpink;
+    font: bold 80px "Goudy Bookletter 1911", serif;
+    padding-bottom: 50px;
+    border-bottom: 10px dotted purple;
+    text-shadow: 2px 2px 1px black;
+}
+
+nav
+{
     font-family: "Pixelify Sans", monospace, sans-serif;
     font-size: 1.2em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border: 0.2px solid purple;
     border-radius: 8px;
-    padding: 0;
-    background-color: #e3fefd;
+    padding: 5px 20px 2px 20px;
+    margin: 0px 10px 10px 10px;
+    text-align: center;
+    background-color: #ffe0cd;
+    background: #3CD3AD;
+    background: linear-gradient(to right, #4CB8C470, #3CD3AD70);
 }
 
-h1,h2,body h2+pre {
+nav h3
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav p
+{
+    margin: 4px 0 4px 0;
+}
+
+nav p+p+p+p
+{
+    margin-bottom: 10px;
+}
+
+#Songs, #Memes, #Grammar, #Movies
+{
+    margin-top: 70px;
+}
+
+.audiolist
+{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.audiolist li
+{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: dotted 3px #000000;
+    border-radius: 40px;
+    background-image: url("images/creepgridpink3.png");
+}
+
+.audiolist li:hover
+{
+    background-color: #00000030;
+}
+
+audio::-webkit-media-controls-panel
+{
+    background-color: #ffffff;
+}
+
+section+img
+{
     text-align: center;
 }
 
-#memes img {
-    display: block;
+#Songs h3, #Memes h3, #Grammar h3, #Movies h3
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Monotype Corsiva";
+    font-size: 2.5rem;
+    text-align: center;
 }
 
-canvas+pre {
+#Songs h3 p, #Memes h3 p, #Grammar h3 p, #Movies h3 p
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1,h2,body h1+pre, body h2+pre
+{
+    text-align: center;
+}
+
+.subtext
+{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1+pre
+{
+    margin-bottom: 0;
+}
+
+h2+pre
+{
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+}
+
+#memes img
+{
+    display: block;
+}
+#Random
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#hkitty
+{
     background-image: url("images/note1.png");
     background-attachment: scroll;
     background-repeat: no-repeat;
@@ -60,67 +194,187 @@ canvas+pre {
     margin: 1em;
 }
 
-/*#Grammar {
-    padding: 10px;  /* (try using the calc() function!)
-    margin: 0.5em 0;
-    border: 1px solid black;
-    border-radius: 0.5em;
-    color: rebeccapurple;
-    background-color: black;
-    font-weight: bold;
-}*/
-
-a:link {
+a:link
+{
     color:blue;
 }
 
-a:visited {
+a:visited
+{
     color:blueviolet;
 }
 
-a:hover {
+a:hover
+{
     text-decoration: none;
     color: rgb(255, 0, 119);
 }
 
-/*ul {
+/*ul
+{
     background-color: #e3fefd;
     border: 5px solid purple;
     padding: 5px;
     border-radius: 8px;
 }*/
 
-#Movies tr td:first-child {
-    font-family: "Monofett", monospace, serif;
-    font-size: 24px;
-}
-
-#Grammar dt {
+/*#Grammar dt
+{
     text-shadow: goldenrod 2px 2px;
+}*/
+
+/*#Grammar
+{
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: brightness(0.9) contrast(1.2);
+    background: rgba(255, 0, 0, 0.3);
+    background-blend-mode: color;
+}*/
+.Grammarhead
+{
+    font-size: 1.5em;
+}
+.Grammarhead+em
+{
+    padding-left: 1.7em;
+    color: rgba(0, 0, 0, 0.5);
+}
+dd
+{
+    padding-top: 0.4em;
+    padding-bottom: 1em;
+}
+.Grammarex
+{
+    padding-top: 7px;
 }
 
-footer p {
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main
+{
+    margin: 7px;
+    padding: 7px;
+}
+
+footer
+{
+    margin: 0 0 0 0;
+    width: 100%;
+    bottom: 0%;
+    padding: 5px 0 5px;
     background: linear-gradient(90deg, rgb(131 58 180 / 50%) 0%, rgb(253 29 29 / 30%) 60%, rgb(252 176 69 / 60%) 100%);
 }
 
-hr {
-    border: none;
-    height: 3px;
-    background-color: #333;
-}
-
-  table, th, td {
-    border: 1px solid;
-}
-
-#Memes ol {
+footer p
+{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    margin: 0;
+}
+
+#Movies tr td:first-child
+{
+    font-family: "Monofett", monospace, serif;
+    font-size: 24px;
+}
+#Movies td
+{
+    text-align: center;
+}
+
+.cellcontent
+{
+    display: flex;
+    justify-content: space-between;
+}
+@keyframes rotate
+{
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.movposter
+{
+    padding-left: 5px;
+}
+.movposter:hover
+{
+    animation: rotate 2s linear infinite;
+    /* Covert pics to vinyl covers and play soundtrack on hovering */
+}
+
+table, th, td
+{
+    border: 3.5px dotted;
+    border-radius: 10px;
+}
+table
+{
+    border: 3.5px solid;
+    width: 100%;
+    border-collapse: collapse;
+}
+th
+{
+    border: 3.5px solid;
+    font-size: 1.5rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+progress
+{
+    appearance: none;
+}
+progress::-webkit-progress-bar
+{
+    background-color: #000000;
+    height: 10px;
+    border-radius: 5px;
+}
+progress::-webkit-progress-value
+{
+    background-color: #da2020;
+    height: inherit;
+    border-radius: inherit;
+}
+.bi
+{
+    color: orange;
+}
+
+#Memes ol
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
-/*figure {
-    transform: rotate(0.8turn);
-}*/
+#Memes ol li img, #Memes ol li iframe
+{
+    transition: transform .2s;
+    border-style: outset;
+    border-width: 10px;
+    border-color: #daa520;
+}
+
+#Memes ol li img:hover, #Memes ol li iframe:hover
+{
+    transform: scale(130%);
+    box-shadow: 0 0 50px 10px #fffaaf;
+}
