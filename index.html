@@ -3,11 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="author" content="The Architect">
+    <meta name="author" content="Webdev Padawan">
     <meta name="description" content="brainrot+futurenostalgia">
     <link rel="icon" href="icons/squidchad.png" type="image/x-icon">
-    <title>Webdev Task 1</title>
-    <noscript>Your browser does not support JavaScript!</noscript>
+    <title>Webdev Practice</title>
     <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -35,12 +34,12 @@
         <section id="Songs">
             <h3><img src="images/fancyborder.png" width="400px"/><p>Pop songs that you couldn't escape this year</p><img src="images/fancyborder.png" width="400px" style="transform: rotate(180deg);"/></h3>
             <ul class="audiolist">
-                <li>Kendrick Lamar - Not Like Us <br><br><audio src="audio/notlikeus.mp3" type="audio/mpeg" controls></audio></li><br>
-                <li>Chappell Roan - Good Luck, Babe! <br><br><audio src="audio/goodluckbabe.mp3" type="audio/mpeg" controls></audio></li><br>
-                <li>Sabrina Carpenter - Please Please Please <br><br><audio src="audio/pleasepleaseplease.mp3" type="audio/mpeg" controls></audio></li><br>
-                <li>Charli XCX - Von Dutch <br><br><audio src="audio/vondutch.mp3" type="audio/mpeg" controls></audio></li><br>
-                <li>Future, Travis Scott, Playboi Carti - Type Shit <br><br><audio src="audio/typeshit.mp3" type="audio/mpeg" controls></audio></li><br>
-                <li>Billie Eilish - Birds of a Feather <br><br><audio src="audio/birdsofafeather.mp3" type="audio/mpeg" controls></audio></li><br>
+                <li>Kendrick Lamar - <br><em>Not Like Us</em><br><br><audio src="audio/notlikeus.mp3" type="audio/mpeg" controls></audio></li><br>
+                <li>Chappell Roan - <br><em>Good Luck, Babe!</em><br><br><audio src="audio/goodluckbabe.mp3" type="audio/mpeg" controls></audio></li><br>
+                <li>Sabrina Carpenter - <br><em>Please Please Please</em><br><br><audio src="audio/pleasepleaseplease.mp3" type="audio/mpeg" controls></audio></li><br>
+                <li>Charli XCX - <br><em>Von Dutch</em><br><br><audio src="audio/vondutch.mp3" type="audio/mpeg" controls></audio></li><br>
+                <li>Future, Travis Scott, Playboi Carti - <br><em>Type Shit</em><br><br><audio src="audio/typeshit.mp3" type="audio/mpeg" controls></audio></li><br>
+                <li>Billie Eilish - <br><em>Birds of a Feather</em><br><br><audio src="audio/birdsofafeather.mp3" type="audio/mpeg" controls></audio></li><br>
             </ul>
         </section>
 
@@ -186,121 +185,134 @@
         
         <section id="Movies">
             <h3><img src="images/fancyborder.png" width="400px"/><p>Movies that had us hooked</p><img src="images/fancyborder.png" width="400px" style="transform: rotate(180deg);"/></h3>
-            <table>
+            <table id="movielist">
                 <tr><th scope="col">Title</th>
                     <th scope="col">Genre</th>
                     <th scope="col">Duration</th>
                     <th scope="col">RT+IMDb Score</th></tr>
                     <!-- Also add random fun fact (quirky font, maybe?)-->
                 <tr><td><div class="cellcontent">
-                        <img class="movposter" src="images/poster-challengers.png" width="20px">Challengers<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Challengers<span></span></div></td>
                     <td>Sports/Romance</td>
                     <td>02:11:00</td>
                     <td><progress value="88" max="100"></progress>  88%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> 7.1/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/poster-dune2.png" width="20px">Dune: Part Two<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Dune: Part Two<span></span></div></td>
                     <td>Sci-fi/Adventure</td>
                     <td>02:46:00</td>
                     <td><progress value="92" max="100"></progress>  92%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i> 8.5/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/poster-beetlejuice2.png" width="20px">Beetlejuice Beetlejuice<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Beetlejuice Beetlejuice<span></span></div></td>
                     <td>Horror/Comedy</td>
                     <td>01:45:00</td>
                     <td><progress value="76" max="100"></progress>  76%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> 6.7/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Deadpool & Wolverine<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Deadpool & Wolverine<span></span></div></td>
                     <td>Action/Comedy</td>
                     <td>02:08:00</td>
                     <td><progress value="78" max="100"></progress>  78%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i> 7.6/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Pushpa 2: The Rule<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Pushpa 2: The Rule<span></span></div></td>
                     <td>Action/Thriller</td>
                     <td>03:21:00</td>
                     <td><progress value="78" max="100"></progress>  78%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> 6.2/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Wicked<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Wicked<span></span></div></td>
                     <td>Musical/Fantasy</td>
                     <td>02:40:00</td>
                     <td><progress value="88" max="100"></progress>  88%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i> 7.6/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">It Ends with Us<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>It Ends with Us<span></span></div></td>
                     <td>Romance/Drama</td>
                     <td>02:10:00</td>
                     <td><progress value="55" max="100"></progress>  55%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> 6.4/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">The Substance<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>The Substance<span></span></div></td>
                     <td>Horror/Sci-fi</td>
                     <td>02:21:00</td>
                     <td><progress value="90" max="100"></progress>  90%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> 7.3/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Stree 2: Sarkate ka Aatank<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Stree 2: Sarkate ka Aatank<span></span></div></td>
                     <td>Horror/Comedy</td>
                     <td>02:27:00</td>
                     <td><progress value="62" max="100"></progress>  62%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> 6.9/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Ghostbusters: Frozen Empire<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Ghostbusters: Frozen Empire<span></span></div></td>
                     <td>Comedy/Horror</td>
                     <td>01:55:00</td>
                     <td><progress value="42" max="100"></progress>  42%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> 6.1/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Inside Out 2<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Inside Out 2<span></span></div></td>
                     <td>Family/Comedy</td>
                     <td>01:36:00</td>
                     <td><progress value="91" max="100"></progress>  91%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i> 7.5/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Alien: Romulus<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Alien: Romulus<span></span></div></td>
                     <td>Horror/Sci-fi</td>
                     <td>01:59:00</td>
                     <td><progress value="79" max="100"></progress>  79%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> 7.1/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Venom: The Last Dance<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Venom: The Last Dance<span></span></div></td>
                     <td>Action/Sci-fi</td>
                     <td>01:50:00</td>
                     <td><progress value="41" max="100"></progress>  41%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> 6.0/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">The Crow<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>The Crow<span></span></div></td>
                     <td>Action/Thriller</td>
                     <td>01:51:00</td>
                     <td><progress value="22" max="100"></progress>  22% :(<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> 4.7/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">The Idea of You<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>The Idea of You<span></span></div></td>
                     <td>Romance/Comedy</td>
                     <td>01:55:00</td>
                     <td><progress value="81" max="100"></progress>  81%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> 6.3/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Bhool Bhulaiyaa 3<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Bhool Bhulaiyaa 3<span></span></div></td>
                     <td>Horror/Comedy</td>
                     <td>02:38:00</td>
                     <td><progress value="43" max="100"></progress>  43%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> 4.7/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Babygirl<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Babygirl<span></span></div></td>
                     <td>Thriller/Erotic</td>
                     <td>01:54:00</td>
                     <td><progress value="77" max="100"></progress>  77%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> 6.1/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Sonic the Hedgehog 3<span></span></div></td>
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Sonic the Hedgehog 3<span></span></div></td>
                     <td>Action/Comedy</td>
                     <td>01:50:00</td>
                     <td><progress value="86" max="100"></progress>  86%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i> 7.0/10</td></tr>
                 <tr><td><div class="cellcontent">
-                    <img class="movposter" src="images/whistle.jpg" width="20px">Mean Girls<span></span></div></td>
+                    <!--img class="movposter" src="images/whistle.jpg" width="20px"-->
+                    <span class="bi bi-plus-circle-dotted" data-action = "add"></span>Mean Girls<span></span></div></td>
                     <td>Musical/Comedy</td>
                     <td>01:52:00</td>
                     <td><progress value="69" max="100"></progress>  69%<br><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i> 5.6/10</td></tr>
             </table>
+            <div id="watchlist">
+                <div class="witem"></div>
+                <div class="witem"></div>
+                <div class="witem" id="w2">
+                    <h4>Watchlist</h4>
+                    <ul id="selectedlist"></ul>
+                    <button id="dlmovielist">Save List</button>
+                </div>
+            </div>
         </section>
 
         <section id="Random">
             <div>
             <figure>
                 <a href="https://archive.ph/fKHaa" target="_blank">
-                <img src="images/diddydown.png" alt="Diddy goes down" width="300"></a>
+                <img src="images/diddydown.png" alt="Diddy goes down" id="diddy" width="300"></a>
                 <figcaption style="text-align: center;">P. Diddy's secrets and scandals came to light</figcaption>
             </figure><br><br>
             </div>
             <div>
             <pre id="hkitty">
             
+                
+
+                
             
     ⠀⠀⠀⠀⠀⠀⠀⠀    ⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ⠀⠀⡼⠣⢤⡀⠤⡜⢀⢿⠛⠛⡄⠀⠀⠀⠀⠀⠀⠀
@@ -310,32 +322,36 @@
         ⠀⠋⡫⣄⡀⠀⠘⠛⠀⠀⢀⣰⡮⠄⠀⠀⠀⠀⠀⠀
         ⠀⠌⡏⠀⠈⡗⠒⠒⠒⢻⠁⠀⢸⠀⠀⠀⠀⠀⠀⠀
         ⠀⠀⠑⠊⠉⠀⠀⠀⠀⠀⠉⠑⠈⠀⠀⠀⠀⠀⠀⠀
-        
+        <h2 popover id="RR"><a href="https://rick.nerial.uk/" target="popup" onclick="window.open('https://rick.nerial.uk/','prank','width=600,height=400')">And now here!</a></h2>
+         <button popovertarget="RR">OMG you should&#13;&#10;totally click here!</button><br><br><br>
         
             </pre>
             </div>
         </section>
-        <h2 popover id="RR"><a href="https://rick.nerial.uk/" target="popup" onclick="window.open('https://rick.nerial.uk/','prank','width=600,height=400')">And now here!</a></h2>
-            <button popovertarget="RR">OMG you should totally click here!</button><br><br><br>
 
     </main>
 
     <footer>
-        <p>@Copyright 2099 by Miguel O'Hara. You can't run from us forever, Miles.
+        <p>
+            <i>@Copyright 2099 by Miguel O'Hara. You can't run from us forever, Miles.</i>
 
-        <span><label for="yearsuggestion">Which year would you like us to do next: </label>
-            <input id="yearsuggestion" name="yearsuggestion" type="number" list="yearslist">
-            <datalist id="yearslist">
-                <option value="2023"></option>
-                <option value="2022"></option>
-                <option value="2021"></option>
-                <option value="2020"></option>
-                <option value="2019"></option>
-            </datalist>
-            <button type="submit" form="yearslist" onclick="alert('Thank you for letting us know!')">Submit</button><br></span>
+            <button id="setname">Enter Name?</button>
+
+            <span><label for="yearsuggestion">Which year would you like us to do next: </label>
+                <input id="yearsuggestion" name="yearsuggestion" type="number" list="yearslist">
+                <datalist id="yearslist">
+                    <option value="2023"></option>
+                    <option value="2022"></option>
+                    <option value="2021"></option>
+                    <option value="2020"></option>
+                    <option value="2019"></option>
+                </datalist>
+                <button type="submit" form="yearslist" onclick="alert('Thank you for letting us know!')">Submit</button><br></span>
         
-        <span><iframe src="https://lavender-but-bread.neocities.org/buttons/piano-button.html" style="border: none;" width="88" height="31"></iframe></span></p>
+            <span><iframe src="https://lavender-but-bread.neocities.org/buttons/piano-button.html" style="border: none;" width="88" height="31"></iframe></span>
+        </p>
     </footer>
-
+    <script src="main.js"></script>
+    <noscript>Your browser does not support JavaScript.</noscript>
 </body>
 </html>

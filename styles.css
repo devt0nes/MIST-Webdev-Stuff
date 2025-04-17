@@ -38,22 +38,29 @@
 html
 {
     /*padding: 20px 20px 20px 20px;*/
-    background-image: url("images/creepgridpink.png");
+    background-image: url('images/creepgridpink.png');
+    /* color- rgb((244, 230, 241), #f4e6f1*/
     background-color: black;
     cursor: url("icons/handcursor.cur"),auto; /*Source: https://www.cursor.cc/?action=icon&file_id=36795*/
 }
 
-/*audio:hover
+link:hover
 {
     cursor: url("icons/handhover.png"),auto;
-}*/
+}
 
+@keyframes floatbg
+{
+    from { background-position: 0% 0%; }
+    to { background-position: 85.5% 0%; }
+}
 #pagetop
 {
     background-image: url("images/pixelclouds.png");
     background-repeat: repeat;
     background-size: 700px;
     padding-top: 15px;
+    animation: floatbg 20s linear infinite;
 }
 
 h1
@@ -113,7 +120,7 @@ nav p+p+p+p
     padding: 10px;
     margin: 10px;
     text-align: center;
-    border: dotted 3px #000000;
+    border: dotted 4px #000000;
     border-radius: 40px;
     background-image: url("images/creepgridpink3.png");
 }
@@ -175,6 +182,50 @@ h2+pre
 {
     display: block;
 }
+
+#watchlist
+{
+    font-family: "Pixelify Sans", monospace, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.witem
+{
+    width: 33.3333%;
+    box-sizing: border-box;
+}
+
+#w2 h4
+{
+    font-size: large;
+    text-decoration: underline wavy;
+}
+
+#w2
+{  
+    margin: 1rem;
+    max-width: 40ch;
+    border: 8px solid #0038FF;
+    color: black;
+    position: relative;
+    border-image: 
+    url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 0H8v4H4v4H0v8h4v4h4v4h8v-4h4v-4h4V8h-4V4h-4V0zm0 4v4h4v8h-4v4H8v-4H4V8h4V4h8z' fill='%230038FF'/%3E%3C/svg%3E")
+    8 stretch;
+}
+
+#w2:before
+{
+    content: "";
+    position: absolute;
+    right: -28px;
+    top: calc(50% - 14px);
+    width: 24px;
+    height: 28px;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 0H0v8h12v4h4v4h-4v4H0v8h4v-4h8v-4h4v-4h8v-4h-8V8h-4V4H4V0z' fill='%230038FF'/%3E%3Cpath fill='%23f4e6f1' d='M0 8h4v12H0z'/%3E%3C/svg%3E");
+}
+
 #Random
 {
     display: flex;
@@ -190,8 +241,10 @@ h2+pre
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: left;
-    background-size: auto 250px;
+    background-size: contain;
+    padding: 2em;
     margin: 1em;
+    margin-top: 0;
 }
 
 a:link
@@ -230,6 +283,7 @@ a:hover
     background: rgba(255, 0, 0, 0.3);
     background-blend-mode: color;
 }*/
+
 .Grammarhead
 {
     font-size: 1.5em;
@@ -285,7 +339,7 @@ footer p
 #Movies tr td:first-child
 {
     font-family: "Monofett", monospace, serif;
-    font-size: 24px;
+    font-size: 28px;
 }
 #Movies td
 {
@@ -297,6 +351,7 @@ footer p
     display: flex;
     justify-content: space-between;
 }
+
 @keyframes rotate
 {
     from {
@@ -313,7 +368,7 @@ footer p
 .movposter:hover
 {
     animation: rotate 2s linear infinite;
-    /* Covert pics to vinyl covers and play soundtrack on hovering */
+    /* Convert pics to vinyl covers and play soundtrack on hovering */
 }
 
 table, th, td
@@ -351,9 +406,24 @@ progress::-webkit-progress-value
     height: inherit;
     border-radius: inherit;
 }
-.bi
+.bi-star,.bi-star-half, .bi-star-fill 
 {
     color: orange;
+}
+
+.bi-plus-circle-dotted
+{
+    transform: scale(80%);
+    margin-left: 5px;
+    color: rgb(71, 38, 0);
+}
+.bi-plus-circle-dotted:hover
+{
+    color:#3CD3AD;
+}
+.buttonclick
+{
+    color:rgb(0, 42, 255) !important;
 }
 
 #Memes ol
@@ -363,6 +433,11 @@ progress::-webkit-progress-value
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+}
+#Memes ol li
+{
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 #Memes ol li img, #Memes ol li iframe
